@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Driftgame - 刺激的怪物生存游戏，体验无尽的冒险与挑战">
+    <meta name="keywords" content="Driftgame, 怪物生存, 在线游戏, 冒险游戏">
+    <title>Driftgame - 刺激的怪物生存冒险游戏</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8H09JVRNR4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8H09JVRNR4');
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-green: #34C759;
+            --apple-red: #FF3B30;
+            --apple-orange: #FF9500;
+            --apple-gray: #8E8E93;
+            --apple-light-gray: #F2F2F7;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--apple-light-gray);
+            color: #333;
+        }
+        
+        .game-container {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background-color: var(--apple-blue);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0062cc;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            color: var(--apple-blue);
+            border-bottom: 2px solid var(--apple-blue);
+            padding-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .game-iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="/" class="text-2xl font-bold text-blue-600">Driftgame.org</a>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="/" class="hover:text-blue-600">首页</a></li>
+                        <li><a href="/games" class="hover:text-blue-600">游戏</a></li>
+                        <li><a href="/about" class="hover:text-blue-600">关于我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Driftgame - 刺激的怪物生存冒险游戏</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">体验无尽的冒险与挑战，在怪物世界中生存并成为最强者！</p>
+        </section>
+
+        <section class="game-container bg-white p-4 md:p-6 mb-12">
+            <div class="responsive-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        class="game-iframe" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 section-title">游戏介绍</h2>
+                <p class="mb-4">Driftgame 是一款刺激的怪物生存游戏，玩家需要在充满危险的世界中生存并击败各种怪物。游戏采用了精美的画面和流畅的操作体验，让玩家沉浸在紧张刺激的游戏氛围中。</p>
+                <p>通过收集资源、升级能力，你将能够面对更强大的敌人，挑战更高难度的关卡。每一次游戏都是全新的体验，随机生成的地图和敌人让游戏充满了无限可能。</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 section-title">游戏特色</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>精美的游戏画面和流畅的操作体验</li>
+                    <li>多样化的怪物和丰富的游戏场景</li>
+                    <li>随机生成的地图和敌人，每次游戏都是全新体验</li>
+                    <li>丰富的角色升级系统和技能树</li>
+                    <li>支持多平台游戏，随时随地畅玩</li>
+                    <li>定期更新内容，带来更多惊喜</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 section-title">游戏攻略</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-orange-500">新手入门</h3>
+                    <p>刚开始游戏时，专注于收集资源和提升基础能力。避免与强大的敌人正面交锋，学会利用地形和走位技巧来规避危险。</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-green-500">角色发展</h3>
+                    <p>根据自己的游戏风格选择适合的技能树发展路线。平衡攻击、防御和机动性，打造最适合自己的角色构建。</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-red-500">高级技巧</h3>
+                    <p>掌握怪物的攻击模式和弱点，学会预判敌人行动。合理利用技能冷却时间，在关键时刻释放强力技能扭转战局。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold mb-4 section-title">常见问题</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">游戏是否需要下载？</h3>
+                    <p>不需要，Driftgame 是一款在线游戏，只需要打开网页即可直接游玩，无需下载任何客户端。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">游戏支持哪些设备？</h3>
+                    <p>游戏支持电脑、平板和手机等多种设备，采用响应式设计，能够自适应不同屏幕尺寸，提供最佳游戏体验。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">游戏是否需要付费？</h3>
+                    <p>基础游戏内容完全免费，我们提供一些可选的付费内容来增强游戏体验，但不影响核心游戏玩法。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">关于 Driftgame</h3>
+                    <p>Driftgame 是一款刺激的怪物生存游戏，为玩家提供无尽的冒险与挑战。我们致力于打造最优质的游戏体验。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-blue-300">首页</a></li>
+                        <li><a href="/games" class="hover:text-blue-300">游戏</a></li>
+                        <li><a href="/about" class="hover:text-blue-300">关于我们</a></li>
+                        <li><a href="/contact" class="hover:text-blue-300">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">联系我们</h3>
+                    <p>有任何问题或建议，请随时与我们联系。</p>
+                    <p class="mt-2">邮箱: contact@driftgame.org</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+                <p>&copy; 2023 Driftgame.org. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
